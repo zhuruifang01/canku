@@ -6,6 +6,7 @@ $(function(){
         $(".sideleft ul").eq(index).addClass("active");
         $("iframe").css("display","none").eq(index).css("display","block");
     });
+// ========人员管理==========================
 //number.html
     $(".header1 .xuanze").click(function(){
             $(".contain1 .conn .con .checkbox").css("display","block");
@@ -13,12 +14,7 @@ $(function(){
             $(".header1 .delete").css("background","#53a2e0");
         }
     );
-    // page
-    $.jqPaginator('#pagination1', {
-        totalPages: 100,
-        visiblePages: 10,
-        currentPage: 1,
-    });
+// =========入库管理=========================
 
 
 });

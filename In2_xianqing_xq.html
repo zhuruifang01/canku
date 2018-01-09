@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>某项目详情</title>
+    <link rel="stylesheet" href="css/double-date.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/double-date.js"></script>
+    <script src="js/echarts.min.js"></script>
+    <script src="js/createcharts.js"></script>
+</head>
+<style>
+    body{padding:0 8px;box-sizing:border-box;overflow-y:scroll;color:#494949;}
+    a{color:#494949;}
+</style>
+<body>
+<!--start header-->
+<div class="header_In">
+    <ul class="title">
+        <li style="width:370px;"><a href="In2_xianqing.html" style="display:block;width:100%;height:100%;color:#53a2e0;font-size:20px;text-align:left;"> < 新加坡项目(订单:POSGA15094) </a></li>
+    </ul>
+    <ul class="search">
+        <input type="text" placeholder="Search">
+        <img src="img/search.png" alt="">
+    </ul>
+    <ul class="button">
+        <li><a href="In2_xianqing_xq2.html">详情</a></li>
+        <li><a href="">导出统计</a></li>
+    </ul>
+</div>
+<!--end header-->
+<!--start contain-->
+<div class="contain1 contain_In contain_In_xianqing2">
+    <div class="left">
+        <div class="top"  style="border:3px solid #f1f1f1;box-sizing:border-box;padding-left:5px;box-sizing: border-box;">
+            <div class="title">订单信息</div>
+            <div class="con">
+                <ul>
+                    <li>项目:<span>新加坡项目</span></li>
+                    <li>订单号:<span>POSGA15094</span></li>
+                    <li>项目日期:<span>2017.12.20</span></li>
+                </ul>
+                <ul>
+                    <li>供应商:<span>Nokia</span></li>
+                    <li>到货情况:<span>部分到货</span></li>
+                    <li>收货仓库:<span>新加坡</span></li>
+                </ul>
+                <ul class="teshu">
+                    <li>预计收货时间:</li>
+                    <li style="color:#53a2e0;">2012.11.12</li>
+                    <li>实际收货时间:</li>
+                    <li style="color:#53a2e0;">2012.11.12</li>
+                </ul>
+            </div>
+        </div>
+        <div class="bottom">
+            <div id="chart3" style="width:100%;height:100%;"></div>
+        </div>
+    </div>
+    <div class="right">
+        <div class="top">
+            <div class="onebox">
+                <ul>
+                    <li>所有商品</li>
+                    <li style="color:#c2a4f8;">620</li>
+                </ul>
+                <ul>
+                    <li>单体商品</li>
+                    <li style="color:#8bb4f9">420</li>
+                </ul>
+                <ul>
+                    <li>组装商品</li>
+                    <li style="color:#66d0f8;">200</li>
+                </ul>
+            </div>
+            <div class="twobox">
+                <ul>
+                    <li>收货人:</li>
+                    <li class="img"><img src="img/people.png" alt=""></li>
+                    <li>张得勇</li>
+                </ul>
+            </div>
+        </div>
+        <div class="bottom">
+            <div id="chart2" style="width:100%;height:100%;"></div>
+        </div>
+    </div>
+</div>
+<!--end contain-->
+</body>
+<script>
+// chart3:
+    zhuX=['项目A','项目A','项目A','项目A','项目A','项目A','项目A'];
+    zhuY1=[80,80,80,80,80,80,80];
+    zhuY2=[20,3,48,4,10,30,50];
+    createcharts.chart3(zhuX,zhuY1,zhuY2);
+// chart2:
+    Xdata2=['商品A','商品A','商品A','商品A','商品A','商品A','所有商品'];
+    Ydata2=[100,100,100,100,100,100,100];
+    createcharts.chart2("商品到货率",Xdata2,Ydata2);
+// chart4:
+    data=[
+        {value:355, name:'项目A'},
+        {value:355, name:'项目B'},
+        {value:355, name:'项目C'},
+        {value:355, name:'项目D'},
+    ]
+    createcharts.chart4(data);
+//
+
+
+</script>
+</html>

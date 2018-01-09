@@ -25,7 +25,10 @@
 </div>
 <!--end header-->
 <!--start search-->
-<div class="search"><input type="text" placeholder="搜索人员"></div>
+<div class="search" style="position:relative">
+    <input type="text" placeholder="搜索人员">
+    <img src="img/search.png" alt="" style="">
+</div>
 <!--end search-->
 <!--start contain-->
 <div class="contain1">
@@ -156,4 +159,12 @@
 </div>
 <!--end contain-->
 </body>
+<script>
+    // page
+    $.jqPaginator('#pagination1', {
+        totalPages: 100,
+        visiblePages: 10,
+        currentPage: 1,
+    });
+</script>
 </html>
