@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>出库管理_首页</title>
     <link rel="stylesheet" href="css/double-date.css">
     <link rel="stylesheet" href="css/index.css">
     <script src="js/jquery.min.js"></script>
@@ -11,10 +11,94 @@
     <script src="js/createcharts.js"></script>
     <script src="js/index.js"></script>
 </head>
+<style>
+    body{padding:0 8px;box-sizing:border-box;overflow-y:scroll;color:#494949;}
+    a{color:#494949;}
+</style>
 <body>
-出库管理
-<!--<div id="chart2" style="width:100%;height:100%;"></div>-->
-<div id="chart1" style="width:100%;height:100%;"></div>
-<div id="chart3" style="width:100%;height:100%;"></div>
+<!--start header-->
+<div class="header_In">
+    <ul class="title">
+        <li class="active">商品统计</li>
+        <li><a href="Out2.html" style="display:block;width:100%;height:100%;color:#53a2e0;">项目(订单)统计</a></li>
+    </ul>
+    <ul class="search">
+        <input type="text" placeholder="项目名／订单号">
+        <img src="img/search.png" alt="">
+    </ul>
+    <ul class="button">
+        <li><a href="Out_xianqing.html">详情</a></li>
+        <li><a href="">导出统计</a></li>
+    </ul>
+</div>
+<div class="rilibox" style="width:100%;height:45px;">
+    <div class="outer clearfix" style="float:right;">
+        <div class="date date1 fl" id="from">
+            <img src="img/rili.png" alt="">
+            <input type="text" class="date-check" placeholder="起始日期"/>
+        </div>
+        <span style="float:left;line-height:35px;margin-right:10px;">至</span>
+        <div class="date fr" id="to">
+            <img src="img/rili.png" alt="">
+            <input type="text" class="date-check" placeholder="结束日期"/>
+        </div>
+        <div class="true">查询</div>
+    </div>
+</div>
+<!--end header-->
+<!--start contain-->
+<div class="contain1 contain_In">
+    <div class="left">
+        <div class="top">
+            <div class="onebox">
+                <ul>
+                    <li>所有商品</li>
+                    <li style="color:#c2a4f8;">620</li>
+                </ul>
+                <ul>
+                    <li>配件商品</li>
+                    <li style="color:#8bb4f9">420</li>
+                </ul>
+                <ul>
+                    <li>整件商品</li>
+                    <li style="color:#66d0f8;">200</li>
+                </ul>
+                <ul>
+                    <li>商品种类</li>
+                    <li style="color:#ed8ba2;">16</li>
+                </ul>
+            </div>
+            <div class="twobox">
+                <ul>
+                    <li>发货人:</li>
+                    <li class="img"><img src="img/people.png" alt=""></li>
+                    <li>张得勇</li>
+                </ul>
+            </div>
+        </div>
+        <div class="bottom">
+            <div id="chart5" style="width:100%;height:100%;"></div>
+        </div>
+    </div>
+    <div class="right">
+        <div class="top"></div>
+        <div class="bottom">
+            <div id="chart2" style="width:100%;height:100%;"></div>
+        </div>
+    </div>
+</div>
+<!--end contain-->
 </body>
+<script>
+    // chart5:
+    zhuX=['项目A','项目A','项目A','项目A','项目A','项目A','项目A'];
+    zhuY1=[80,80,80,80,80,80,80];
+    zhuY2=[20,3,48,4,10,30,50];
+    zhuY3=[10,20,10,20,10,20,10];
+    createcharts.chart5(zhuX,zhuY1,zhuY2,zhuY3);
+    // chart2:
+    Xdata2=['商品A','商品A','商品A','商品A','商品A','商品A','所有商品'];
+    Ydata2=[20,30,30,50,20,80,100];
+    createcharts.chart2("商品占比率",Xdata2,Ydata2);
+</script>
 </html>
