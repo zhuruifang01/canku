@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>某项目商品出库详情</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jqPaginator.min.js"></script>
+</head>
+<style>
+    body{padding:0 8px;box-sizing:border-box;overflow-y:scroll;color:#494949;}
+    a{color:#494949;}
+</style>
+<body>
+<!--start header-->
+<div class="header_In">
+    <ul class="title">
+        <li style="width:370px;"><a href="Out2_xianqing_xq.html" style="display:block;width:100%;height:100%;font-size:20px;text-align:left;"> < 新加坡项目(订单:POSGA15094) </a></li>
+    </ul>
+    <ul class="search">
+        <input type="text" placeholder="商品">
+        <img src="img/search.png" alt="">
+    </ul>
+    <ul class="button" style="width:106px">
+        <li><a href="">导出列表</a></li>
+    </ul>
+</div>
+<!--end header-->
+<!--start contain-->
+<div class="contain1 contain_In contain_In_biaoge">
+    <li class="table">
+        <table class="table table-hover table-bordered">
+            <thead>
+            <tr style="background:#f9f9f9">
+                <th>出货日期</th>
+                <th>供应商名称</th>
+                <th>产品名称</th>
+                <th>规格</th>
+                <th>组件</th>
+                <th>出货数量</th>
+                <th>出货仓库</th>
+                <th>发货人</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>2017/12/18</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Nokia</td>
+                <td>80MM</td>
+                <td></td>
+                <td>是</td>
+                <td>500</td>
+                <td>新加坡</td>
+                <td>张得勇</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Nokia</td>
+                <td>80MM</td>
+                <td></td>
+                <td>是</td>
+                <td>500</td>
+                <td>新加坡</td>
+                <td>张得勇</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Nokia</td>
+                <td>80MM</td>
+                <td></td>
+                <td>是</td>
+                <td>500</td>
+                <td>新加坡</td>
+                <td>张得勇</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Nokia</td>
+                <td>80MM</td>
+                <td></td>
+                <td>是</td>
+                <td>500</td>
+                <td>新加坡</td>
+                <td>张得勇</td>
+            </tr>
+            <tr>
+                <td>2017/12/20</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Nokia</td>
+                <td>80MM</td>
+                <td></td>
+                <td>是</td>
+                <td>500</td>
+                <td>新加坡</td>
+                <td>张得勇</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Nokia</td>
+                <td>80MM</td>
+                <td></td>
+                <td>是</td>
+                <td>500</td>
+                <td>新加坡</td>
+                <td>张得勇</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Nokia</td>
+                <td>80MM</td>
+                <td></td>
+                <td>是</td>
+                <td>500</td>
+                <td>新加坡</td>
+                <td>张得勇</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Nokia</td>
+                <td>80MM</td>
+                <td></td>
+                <td>是</td>
+                <td>500</td>
+                <td>新加坡</td>
+                <td>张得勇</td>
+            </tr>
+            </tbody>
+        </table>
+    </li>
+    <ul class="pagination" id="pagination1"></ul>
+</div>
+<!--end contain-->
+</body>
+<script>
+    // page
+    $.jqPaginator('#pagination1', {
+        totalPages: 100,
+        visiblePages: 10,
+        currentPage: 1,
+    });
+</script>
+</html>

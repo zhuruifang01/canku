@@ -79,7 +79,7 @@
                       },
                       name:'应收货量',
                       type:'bar',
-                      barWidth: '35%',
+                      barWidth: '30%',
                       itemStyle:{
                           normal: {
 
@@ -106,7 +106,7 @@
                       },
                       name:'已收货量',
                       type:'bar',
-                      barWidth: '35%',
+                      barWidth: '30%',
                       itemStyle:{
                           normal: {
 
@@ -492,7 +492,7 @@
                       },
 
                       type: 'bar',
-                      name:"出库数量",
+                      name:"库存总量",
                       barWidth: '50%',
                       itemStyle:{
                           normal: {
@@ -519,7 +519,7 @@
                               formatter: '{c}'
                           }
                       },
-                      name:'库存总量',
+                      name:'出库数量',
                       type:'bar',
                       barWidth: '50%',
                       itemStyle:{
