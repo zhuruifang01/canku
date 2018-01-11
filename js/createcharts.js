@@ -379,7 +379,7 @@
       });
   };
       // 饼图
-      createcharts.chart4=function(){
+      createcharts.chart4=function(data){
       $(function(){
           var chart4= echarts.init(document.getElementById('chart4'));
           var option = {
