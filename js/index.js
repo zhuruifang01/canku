@@ -46,4 +46,5 @@ $(function(){
     var to=currentTime();
     $(".outer #from input").attr("value",from);
     $(".outer #to input").attr("value",to);
+
 });
