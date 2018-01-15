@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>仓库管理</title>
+    <title>标签管理</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/index.css">
     <script src="js/jquery.min.js"></script>
@@ -16,10 +16,10 @@
 <!--start header-->
 <div class="header_In header_room">
     <ul class="title">
-        <li class="active"><a href="room.html"><img src="img/room1.png" alt="">商品管理</a></li>
+        <li><a href="room.html"><img src="img/room1.png" alt="">商品管理</a></li>
         <li><a href="room_shebei.html" style="display:block;width:100%;height:100%;"><img src="img/room2.png" alt="">设备管理</a>
         </li>
-        <li><a href="room_biaoqiang.html" style="display:block;width:100%;height:100%;"><img src="img/room3.png" alt="">标签管理</a></li>
+        <li  class="active"><a href="room_biaoqiang.html" style="display:block;width:100%;height:100%;"><img src="img/room3.png" alt="">标签管理</a></li>
         <li><a href="room_sunhao.html" style="display:block;width:100%;height:100%;"><img src="img/room4.png" alt="">损耗管理</a></li>
         <li><a href="room_tuihuo.html" style="display:block;width:100%;height:100%;"><img src="img/room5.png" alt="">退货管理</a></li>
     </ul>
@@ -34,15 +34,15 @@
     <div class="top">
         <div class="con">
             <ul>
-                <li>所有商品</li>
+                <li>所有标签</li>
                 <li style="color:#c1a5f7;">620</li>
             </ul>
             <ul>
-                <li>配件商品</li>
+                <li>配件标签</li>
                 <li style="color:#8cb4f9;">420</li>
             </ul>
             <ul>
-                <li>整件商品</li>
+                <li>整件标签</li>
                 <li style="color:#66d0f7;">200</li>
             </ul>
         </div>
@@ -69,118 +69,99 @@
     </div>
     <div class="center">
         <ul class="conn">
-            <li>所有商品</li>
+            <li>所有 标签</li>
             <li>
                 <select name="">
-                    <option value="">大型设备</option>
+                    <option value="">10开头</option>
                     <option value="">设备1</option>
                     <option value="">设备2</option>
                 </select>
             </li>
             <li>
                 <select name="">
-                    <option value="">小型设备</option>
+                    <option value="">20开头</option>
                     <option value="">设备1</option>
                     <option value="">设备2</option>
                 </select>
             </li>
             <li>
                 <select name="">
-                    <option value="">配件</option>
+                    <option value="">30开头</option>
                     <option value="">配件1</option>
                     <option value="">配件2</option>
                 </select>
             </li>
         </ul>
-        <ul class="conn2"><li>导出</li></ul>
+        <ul class="conn2" style="width:140px;">
+            <li>导出</li>
+            <li>新增</li>
+        </ul>
     </div>
     <div class="bottom">
         <li class="table">
             <table class="table table-hover table-bordered">
                 <thead>
                 <tr style="background:#f9f9f9">
-                    <th>仓库</th>
+                    <th>序号</th>
+                    <th>标签码</th>
+                    <th>标签图片</th>
+                    <th>商品编号</th>
                     <th>商品名称</th>
-                    <th>商品图片</th>
                     <th>单位</th>
-                    <th>标签</th>
                     <th>规格</th>
                     <th>组装产品</th>
-                    <th>库存数量</th>
-                    <th>预警数</th>
-                    <th>所在位置</th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr>
-                    <td>2新加坡</td>
-                    <td>80MM QUADPAVE</td>
-                    <td class="img"><img src="img/people.png" alt=""></td>
-                    <td>PC</td>
+                    <td>1</td>
                     <td>10236577416</td>
+                    <td class="img"><img src="img/people.png" alt=""></td>
+                    <td>123456789</td>
+                    <td>(GEREY)80MM QUADPAVE</td>
+                    <td>PC</td>
                     <td>1*1*1</td>
-                    <td>否</td>
-                    <td>500</td>
-                    <td class="input">
-                        <input type="text" placeholder="50">
-                    </td>
-                    <td>A-01-02</td>
+                    <td>是</td>
                 </tr>
                 <tr>
-                    <td>2新加坡</td>
-                    <td>80MM QUADPAVE</td>
-                    <td class="img"><img src="img/people.png" alt=""></td>
-                    <td>PC</td>
+                    <td>1</td>
                     <td>10236577416</td>
+                    <td class="img"><img src="img/people.png" alt=""></td>
+                    <td>123456789</td>
+                    <td>(GEREY)80MM QUADPAVE</td>
+                    <td>PC</td>
                     <td>1*1*1</td>
-                    <td>否</td>
-                    <td>500</td>
-                    <td class="input">
-                        <input type="text" placeholder="50">
-                    </td>
-                    <td>A-01-02</td>
+                    <td>是</td>
                 </tr>
                 <tr>
-                    <td>2新加坡</td>
-                    <td>80MM QUADPAVE</td>
-                    <td class="img"><img src="img/people.png" alt=""></td>
-                    <td>PC</td>
+                    <td>1</td>
                     <td>10236577416</td>
+                    <td class="img"><img src="img/people.png" alt=""></td>
+                    <td>123456789</td>
+                    <td>(GEREY)80MM QUADPAVE</td>
+                    <td>PC</td>
                     <td>1*1*1</td>
-                    <td>否</td>
-                    <td>500</td>
-                    <td class="input">
-                        <input type="text" placeholder="50">
-                    </td>
-                    <td>A-01-02</td>
+                    <td>是</td>
                 </tr>
                 <tr>
-                    <td>2新加坡</td>
-                    <td>80MM QUADPAVE</td>
-                    <td class="img"><img src="img/people.png" alt=""></td>
-                    <td>PC</td>
+                    <td>1</td>
                     <td>10236577416</td>
+                    <td class="img"><img src="img/people.png" alt=""></td>
+                    <td>123456789</td>
+                    <td>(GEREY)80MM QUADPAVE</td>
+                    <td>PC</td>
                     <td>1*1*1</td>
-                    <td>否</td>
-                    <td>500</td>
-                    <td class="input">
-                        <input type="text" placeholder="50">
-                    </td>
-                    <td>A-01-02</td>
+                    <td>是</td>
                 </tr>
                 <tr>
-                    <td>2新加坡</td>
-                    <td>80MM QUADPAVE</td>
-                    <td class="img"><img src="img/people.png" alt=""></td>
-                    <td>PC</td>
+                    <td>1</td>
                     <td>10236577416</td>
+                    <td class="img"><img src="img/people.png" alt=""></td>
+                    <td>123456789</td>
+                    <td>(GEREY)80MM QUADPAVE</td>
+                    <td>PC</td>
                     <td>1*1*1</td>
-                    <td>否</td>
-                    <td>500</td>
-                    <td class="input">
-                        <input type="text" placeholder="50">
-                    </td>
-                    <td>A-01-02</td>
+                    <td>是</td>
                 </tr>
                 </tbody>
             </table>
