@@ -2,9 +2,382 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>智能取货</title>
+    <title>取货管理</title>
+    <link rel="stylesheet" href="css/double-date.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jqPaginator.min.js"></script>
+    <script src="js/double-date.js"></script>
+    <script src="js/index.js"></script>
 </head>
+<style>
+    body{padding:0 8px;box-sizing:border-box;overflow-y:scroll;color:#494949;}
+    a{color:#494949;}
+    .contain_Qu .con_Qu ul .huoqu{color:#53a2e0;text-decoration:underline;cursor:pointer;}
+    .contain_Qu .con_Qu ul .none{color:red;}
+    .contain_Qu .con_Qu .teshu li{height:45px;}
+    .contain_Qu .con_Qu .teshu .img{width:50px;height:50px;margin:0 auto;border-radius:50%;overflow:hidden;}
+    .contain_Qu .con_Qu .teshu .img img{width:100%;height:100%;vertical-align:top;}
+    .contain_Qu .con_Qu .teshu .name{height:30px;color:#53a2e0;line-height:30px;}
+    .HQ_contain .button li{cursor:pointer;}
+</style>
 <body>
-智能取货模块
+<!--start header-->
+<div class="header_In">
+    <ul class="title">
+        <li style="color:#53a2e0;font-size:22px;">取货管理</li>
+    </ul>
+    <ul class="search" style="float:right">
+        <input type="text" placeholder="搜索">
+        <img src="img/search.png" alt="">
+    </ul>
+</div>
+<div class="rilibox" style="width:100%;height:45px;">
+
+    <div class="outer clearfix" style="float:right;width:600px;">
+        <div class="true BTN BTN_add" style="float:left;margin-right:95px;">新增</div>
+        <div class="date date1 fl" id="from">
+            <img src="img/rili.png" alt="">
+            <input type="text" class="date-check"/>
+        </div>
+        <span style="float:left;line-height:35px;margin-right:10px;">至</span>
+        <div class="date fr" id="to">
+            <img src="img/rili.png" alt="">
+            <input type="text" class="date-check"/>
+        </div>
+        <div class="true" style="float:left;">查询</div>
+    </div>
+</div>
+<!--end header-->
+<!--start contain-->
+<div class="contain1 contain_Qu">
+    <div class="con_Qu">
+        <ul>
+            <li>取货仓库</li>
+            <li>新加坡</li>
+        </ul>
+        <ul>
+            <li>所属订单</li>
+            <li>123456789</li>
+        </ul>
+        <ul>
+            <li>取货总量</li>
+            <li>120</li>
+        </ul>
+        <ul>
+            <li>取货路线</li>
+            <li class="huoqu huoqu_luxiang BTN BTN_luxian">获取</li>
+        </ul>
+        <ul>
+            <li>货物详情</li>
+            <li class="huoqu huoqu_xianqing BTN BTN_xianqing">获取</li>
+        </ul>
+        <ul>
+            <li>取货时间</li>
+            <li>2017/12/12</li>
+        </ul>
+        <ul>
+            <li>状态</li>
+            <li class="none">待取货</li>
+        </ul>
+        <ul class="teshu">
+            <li>取货人</li>
+            <li class="img"> <img src="img/people.png" alt=""></li>
+            <li class="name"> 张德勇 </li>
+        </ul>
+        <ul class="teshu">
+            <li>取货人</li>
+            <li class="img"> <img src="img/people.png" alt=""></li>
+            <li class="name"> 张德勇 </li>
+        </ul>
+    </div>
+    <div class="con_Qu">
+        <ul>
+            <li>取货仓库</li>
+            <li>新加坡</li>
+        </ul>
+        <ul>
+            <li>所属订单</li>
+            <li>123456789</li>
+        </ul>
+        <ul>
+            <li>取货总量</li>
+            <li>120</li>
+        </ul>
+        <ul>
+            <li>取货路线</li>
+            <li class="huoqu huoqu_luxiang BTN BTN_luxian">获取</li>
+        </ul>
+        <ul>
+            <li>货物详情</li>
+            <li class="huoqu huoqu_xianqing BTN BTN_xianqing">获取</li>
+        </ul>
+        <ul>
+            <li>取货时间</li>
+            <li>2017/12/12</li>
+        </ul>
+        <ul>
+            <li>状态</li>
+            <li class="none">待取货</li>
+        </ul>
+        <ul class="teshu">
+            <li>取货人</li>
+            <li class="img"> <img src="img/people.png" alt=""></li>
+            <li class="name"> 张德勇 </li>
+        </ul>
+        <ul class="teshu">
+            <li>取货人</li>
+            <li class="img"> <img src="img/people.png" alt=""></li>
+            <li class="name"> 张德勇 </li>
+        </ul>
+    </div>
+    <div class="con_Qu">
+        <ul>
+            <li>取货仓库</li>
+            <li>新加坡</li>
+        </ul>
+        <ul>
+            <li>所属订单</li>
+            <li>123456789</li>
+        </ul>
+        <ul>
+            <li>取货总量</li>
+            <li>120</li>
+        </ul>
+        <ul>
+            <li>取货路线</li>
+            <li class="huoqu huoqu_luxiang BTN BTN_luxian">获取</li>
+        </ul>
+        <ul>
+            <li>货物详情</li>
+            <li class="huoqu huoqu_xianqing BTN BTN_xianqing">获取</li>
+        </ul>
+        <ul>
+            <li>取货时间</li>
+            <li>2017/12/12</li>
+        </ul>
+        <ul>
+            <li>状态</li>
+            <li class="none">待取货</li>
+        </ul>
+        <ul class="teshu">
+            <li>取货人</li>
+            <li class="img"> <img src="img/people.png" alt=""></li>
+            <li class="name"> 张德勇 </li>
+        </ul>
+        <ul class="teshu">
+            <li>取货人</li>
+            <li class="img"> <img src="img/people.png" alt=""></li>
+            <li class="name"> 张德勇 </li>
+        </ul>
+    </div>
+    <ul class="pagination" id="pagination1" style="margin-top:10px;"></ul>
+</div>
+<!--end contain-->
+<!--遮罩-->
+    <div class="zhezhao"></div>
+    <!--取货路线-->
+    <div class="HQ_contain">
+        <div class="header">
+            <div class="title">取货路线</div>
+            <ul class="button">
+                <li>打印</li>
+                <li class="BTN_NO">退出</li>
+            </ul>
+        </div>
+        <div class="img_luxian">
+            <img src="" alt="">
+        </div>
+    </div>
+    <!--取货详情-->
+    <div class="HQ_contain">
+        <div class="header">
+            <div class="title">取货详情</div>
+            <ul class="button">
+                <li>打印</li>
+                <li class="BTN_NO">退出</li>
+            </ul>
+        </div>
+        <div class="table_xianqing">
+            <li class="table">
+                <table class="table table-hover table-bordered">
+                    <thead>
+                    <tr style="background:#f9f9f9">
+                        <th>商品名称</th>
+                        <th>单位</th>
+                        <th>所属订单</th>
+                        <th>规格</th>
+                        <th>取货数量</th>
+                        <th>所在位置</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>(GREY)80MM QUADPAVE</td>
+                        <td>pc</td>
+                        <td>10236577416</td>
+                        <td>1*1*1</td>
+                        <td>300</td>
+                        <td>A-01-02</td>
+                    </tr>
+                    <tr>
+                        <td>(GREY)80MM QUADPAVE</td>
+                        <td>pc</td>
+                        <td>10236577416</td>
+                        <td>1*1*1</td>
+                        <td>300</td>
+                        <td>A-01-02</td>
+                    </tr>
+                    <tr>
+                        <td>(GREY)80MM QUADPAVE</td>
+                        <td>pc</td>
+                        <td>10236577416</td>
+                        <td>1*1*1</td>
+                        <td>300</td>
+                        <td>A-01-02</td>
+                    </tr>
+                    <tr>
+                        <td>(GREY)80MM QUADPAVE</td>
+                        <td>pc</td>
+                        <td>10236577416</td>
+                        <td>1*1*1</td>
+                        <td>300</td>
+                        <td>A-01-02</td>
+                    </tr>
+                    <tr>
+                        <td>(GREY)80MM QUADPAVE</td>
+                        <td>pc</td>
+                        <td>10236577416</td>
+                        <td>1*1*1</td>
+                        <td>300</td>
+                        <td>A-01-02</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </li>
+            <ul class="pagination" id="pagination2" style="position:absolute;left:110px;"></ul>
+        </div>
+    </div>
+    <!--新增-->
+    <div class="HQ_contain" style="width:900px;">
+        <div class="header">
+            <div class="title">新增</div>
+            <ul class="button">
+                <li>确定</li>
+                <li class="BTN_NO">取消</li>
+            </ul>
+        </div>
+        <div class="input_add">
+            <div class="headerdd">
+                <ul>
+                    <li>取货人：</li>
+                    <li><input type="text"></li>
+                </ul>
+                <ul>
+                    <li>取货仓库：</li>
+                    <li><input type="text"></li>
+                </ul>
+                <ul class="time">
+                    <li>取货时间：</li>
+                    <li class="rili2">
+                        <div class="outer clearfix">
+                            <div class="date date1 fl" id="from1">
+                                <img src="img/rili.png" alt="">
+                                <input type="text" class="date-check" placeholder="起始时间"/>
+                            </div>
+                            <span style="float:left;line-height:50px;margin-right:5px;">至</span>
+                            <div class="date fr" id="to1">
+                                <img src="img/rili.png" alt="">
+                                <input type="text" class="date-check" placeholder="结束时间"/>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="table_xianqing">
+                <li class="table">
+                    <table class="table table-hover table-bordered">
+                        <thead>
+                        <tr style="background:#f9f9f9">
+                            <th>商品名称</th>
+                            <th>单位</th>
+                            <th>所属订单</th>
+                            <th>规格</th>
+                            <th>取货数量</th>
+                            <th>所在位置</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </li>
+            </div>
+        </div>
+    </div>
+
+
 </body>
+<script>
+    // page
+        $.jqPaginator('#pagination1', {
+            totalPages: 100,
+            visiblePages: 10,
+            currentPage: 1,
+        });
+        $.jqPaginator('#pagination2', {
+            totalPages: 100,
+            visiblePages: 10,
+            currentPage: 1,
+        });
+    //遮罩:
+        $(".BTN").click(function(){
+            $(".zhezhao").css("display","block");
+        });
+        $(".BTN_luxian").click(function(){
+            $(".HQ_contain").css("display","none").eq(0).css("display","block");
+        });
+        $(".BTN_xianqing").click(function(){
+            $(".HQ_contain").css("display","none").eq(1).css("display","block");
+        });
+        $(".BTN_add").click(function(){
+            $(".HQ_contain").css("display","none").eq(2).css("display","block");
+        });
+        $(".BTN_NO").click(function(){
+            $(".zhezhao").css("display","none");
+            $(".HQ_contain").css("display","none");
+        });
+</script>
 </html>
