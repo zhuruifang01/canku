@@ -254,10 +254,12 @@ input{width:100%;height:100%;padding:0;margin:0;border:0;}
     .HQ_contain .input_add .headerdd ul{width:200px;height:100%;float:left;margin-right:5px;}
     .HQ_contain .input_add .headerdd .time{width:400px;float:right;}
     .HQ_contain .input_add .headerdd ul li{float:left;line-height:50px;}
-    .HQ_contain .input_add .headerdd ul li input{width:122px;border:1px solid #8c8c8c;height:30px;border-radius:15px;}
+    .HQ_contain .input_add .headerdd ul li select{width:122px;border:1px solid #8c8c8c;height:30px;border-radius:15px;background:#fff;}
     .HQ_contain .input_add .headerdd .time .rili2{width:320px;}
     .HQ_contain .input_add .headerdd .time .rili2 .date{margin:0;}
     .HQ_contain .input_add .headerdd .time .rili2 .outer .date img{top:14px;}
     .HQ_contain .input_add .headerdd .time .rili2 input{width:143px;}
     .HQ_contain .input_add .table_xianqing td{border:0;}
     .HQ_contain .input_add .table_xianqing td input{border:1px solid #8c8c8c;height:30px;}
+
+    .table th,.table td{text-align:center;}
