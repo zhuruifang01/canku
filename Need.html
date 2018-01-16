@@ -16,6 +16,8 @@
     .contain_Need .center .conn2{width:229px;}
     .contain_Need .center .conn2 li {width:90px;}
     .contain_Need .table tbody a{color:#53a2e0;text-decoration:underline;}
+    .table .xuanz select{float:left;width:10px;}
+    .table .xuanze img{width:20px;float:right;display:none;}
 </style>
 <body>
 <!--start header-->
@@ -105,7 +107,13 @@
                         15935189909<br/>
                         上海杨浦五角场创新工厂
                     </td>
-                    <td>高</td>
+                    <td class="xuanze">
+                        <select name="">
+                            <option value="">高</option>
+                            <option value="">低</option>
+                        </select>
+                        <img src="img/dui.png" alt="">
+                    </td>
                     <td>300／1000</td>
                     <td><a href="Need_lishi.html">详情</a></td>
                 </tr>
@@ -118,7 +126,13 @@
                         15935189909<br/>
                         上海杨浦五角场创新工厂
                     </td>
-                    <td>高</td>
+                    <td class="xuanze">
+                        <select name="">
+                            <option value="">高</option>
+                            <option value="">低</option>
+                        </select>
+                        <img src="img/dui.png" alt="">
+                    </td>
                     <td>300／1000</td>
                     <td><a href="Need_lishi.html">详情</a></td>
                 </tr>
@@ -131,7 +145,13 @@
                         15935189909<br/>
                         上海杨浦五角场创新工厂
                     </td>
-                    <td>高</td>
+                    <td class="xuanze">
+                        <select name="">
+                            <option value="">高</option>
+                            <option value="">低</option>
+                        </select>
+                        <img src="img/dui.png" alt="">
+                    </td>
                     <td>300／1000</td>
                     <td><a href="Need_lishi.html">详情</a></td>
                 </tr>
@@ -144,7 +164,13 @@
                         15935189909<br/>
                         上海杨浦五角场创新工厂
                     </td>
-                    <td>高</td>
+                    <td class="xuanze">
+                        <select name="">
+                            <option value="">高</option>
+                            <option value="">低</option>
+                        </select>
+                        <img src="img/dui.png" alt="">
+                    </td>
                     <td>300／1000</td>
                     <td><a href="Need_lishi.html">详情</a></td>
                 </tr>
@@ -157,7 +183,13 @@
                         15935189909<br/>
                         上海杨浦五角场创新工厂
                     </td>
-                    <td>高</td>
+                    <td class="xuanze">
+                        <select name="">
+                            <option value="">高</option>
+                            <option value="">低</option>
+                        </select>
+                        <img src="img/dui.png" alt="">
+                    </td>
                     <td>300／1000</td>
                     <td><a href="Need_lishi.html">详情</a></td>
                 </tr>
@@ -175,6 +207,15 @@
         totalPages: 100,
         visiblePages: 10,
         currentPage: 1,
+    });
+    //select:
+    $(".xuanze select").change(function(){
+        var index=$(this).index(".xuanze select");
+        $(".xuanze img").eq(index).css("display","block");
+    });
+    $(".xuanze img").click(function(){
+        var index=$(this).index(".xuanze img");
+        $(".xuanze img").eq(index).css("display","none");
     });
 </script>
 </html>
