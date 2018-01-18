@@ -11,6 +11,8 @@
 <style>
     body{padding:0 8px;box-sizing:border-box;overflow-y:scroll;color:#494949;}
     a{color:#494949;}
+    .contain_In .top .onebox ul{cursor:pointer;}
+    .Active{background:#eee;cursor:pointer;}
 </style>
 <body>
 <!--start header-->
@@ -34,7 +36,7 @@
     <div class="left">
         <div class="top">
             <div class="onebox">
-                <ul>
+                <ul class="Active">
                     <li>所有商品</li>
                     <li style="color:#c2a4f8;">620</li>
                 </ul>
@@ -75,25 +77,30 @@
 <!--end contain-->
 </body>
 <script>
-// chart3:
-    zhuX=['项目A','项目A','项目A','项目A','项目A','项目A','项目A'];
-    zhuY1=[80,80,80,80,80,80,80];
-    zhuY2=[20,3,48,4,10,30,50];
-    createcharts.chart3(zhuX,zhuY1,zhuY2);
-// chart6:
-    Xdata2=['项目A','项目A','项目A','项目A','项目A','项目A','所有项目'];
-    Ydata2=[100,100,100,100,100,100,100];
-    createcharts.chart6("商品到货率",Xdata2,Ydata2);
-// chart4:
-    data=[
-        {value:355, name:'项目A'},
-        {value:355, name:'项目B'},
-        {value:355, name:'项目C'},
-        {value:355, name:'项目D'},
-    ]
-    createcharts.chart4(data);
-//
-
-
+    $(".contain_In .top .onebox ul").click(function(){
+        var index=$(this).index(".contain_In .top .onebox ul");
+        $(".contain_In .top .onebox ul").removeClass("Active").eq(index).addClass("Active");
+        chart();
+    });
+    chart();
+    function chart(){
+        // chart3:
+        zhuX=['项目A','项目A','项目A','项目A','项目A','项目A','项目A'];
+        zhuY1=[80,80,80,80,80,80,80];
+        zhuY2=[20,3,48,4,10,30,50];
+        createcharts.chart3(zhuX,zhuY1,zhuY2);
+        // chart6:
+        Xdata2=['项目A','项目A','项目A','项目A','项目A','项目A','所有项目'];
+        Ydata2=[100,100,100,100,100,100,100];
+        createcharts.chart6("商品到货率",Xdata2,Ydata2);
+        // chart4:
+        data=[
+            {value:355, name:'项目A'},
+            {value:355, name:'项目B'},
+            {value:355, name:'项目C'},
+            {value:355, name:'项目D'},
+        ]
+        createcharts.chart4(data);
+    }
 </script>
 </html>
