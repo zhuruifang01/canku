@@ -234,19 +234,21 @@ input{width:100%;height:100%;padding:0;margin:0;border:0;}
     .HQ_contain .title{width:100px;text-align:center;color:#53a2e0;font-size:18px;float:left;}
     .HQ_contain .button{width:160px;height:30px;position:absolute;top:0;bottom:0;right:0;margin:auto;}
     .HQ_contain .button li{width:70px;height:100%;line-height:30px;text-align:center;color:#fff;background:#53a2e0;float:left;margin-right:10px;border-radius:6px;}
-    .HQ_contain .img_luxian{width:780px;height:420px;margin:0 auto;}
+    .HQ_contain .img_luxian{width:780px;height:400px;margin:0 auto;}
     .HQ_contain .img_luxian .left{width:500px;height:100%;float:left;}
     .HQ_contain .img_luxian .left img{width:100%;height:100%;}
     .HQ_contain .img_luxian .right{width:220px;height:100%;float:right;}
-    .HQ_contain .img_luxian .right .one{width:100%;height:160px;}
-    .HQ_contain .img_luxian .right .two{width:100%;height:200px;margin-top:20px;}
-    .HQ_contain .img_luxian .right .one ul{width:100%;height:35px;line-height:35px;}
+    .HQ_contain .img_luxian .right .one{width:100%;height:140px;}
+    .HQ_contain .img_luxian .right .two{width:100%;height:260px;}
+    .HQ_contain .img_luxian .right .one ul{width:100%;height:32px;line-height:32px;}
     .HQ_contain .img_luxian .right .one ul li{float:right;width:70%;text-align:left;}
     .HQ_contain .img_luxian .right .one ul li:first-child{width:30%;float:left;}
-    .HQ_contain .img_luxian .right .two ul{width:150px;height:100%;border:1px solid #53a2e0;padding-left:15px;box-sizing:border-box;}
-    .HQ_contain .img_luxian .right .two ul li{width:100%;height:30px;line-height:30px;}
+    .HQ_contain .img_luxian .right .two ul{width:173px;height:100%;border:1px solid #53a2e0;padding-left:15px;box-sizing:border-box;}
+    .HQ_contain .img_luxian .right .two ul li{width:100%;height:25px;line-height:25px;}
     .HQ_contain .img_luxian .right .two ul .img{width:60px;height:60px;border-radius:50%;overflow:hidden;margin:0 auto;}
     .HQ_contain .img_luxian .right .two ul .img img{width:100%;height:100%;}
+    .HQ_contain .img_luxian .right .two ul .sao{width:100%;height:100px;margin:0 auto;}
+    .HQ_contain .img_luxian .right .two ul .sao ul{float:left;height:100%;text-align:center;border:0;margin:0;padding:0;}
 
     .HQ_contain .input_add{width:100%;height:100%;}
     .HQ_contain .input_add .headerdd{width:100%;height:50px;}

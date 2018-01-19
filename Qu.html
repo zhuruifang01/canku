@@ -21,6 +21,13 @@
     .contain_Qu .con_Qu .teshu .img img{width:100%;height:100%;vertical-align:top;}
     .contain_Qu .con_Qu .teshu .name{height:30px;color:#53a2e0;line-height:30px;}
     .HQ_contain .button li{cursor:pointer;}
+    .HQ_contain .xz,.HQ_contain .xz2{width:120px;height:30px;line-height:30px;margin-bottom:3px;}
+    .HQ_contain .xz2{width:160px;}
+    .HQ_contain .xz li,.HQ_contain .xz2 li{width:60px;height:100%;text-align:center;cursor: pointer;float:left;}
+    .HQ_contain .xz2 li{width:80px;}
+    .HQ_contain .xz .active,.HQ_contain .xz2 .active{border-bottom:2px solid #53a2e0;float:left;}
+    .table_xianqing .qhxq{display:none;}
+    .table_xianqing .qhxq:first-child{display:block;}
 </style>
 <body>
 <!--start header-->
@@ -178,7 +185,7 @@
 <!--遮罩-->
     <div class="zhezhao"></div>
     <!--取货路线-->
-    <div class="HQ_contain" style="width:820px;">
+    <div class="HQ_contain" style="width:820px;height:520px;">
         <div class="header">
             <div class="title">取货路线</div>
             <ul class="button">
@@ -186,7 +193,11 @@
                 <li class="BTN_NO">退出</li>
             </ul>
         </div>
-        <div class="img_luxian">
+        <ul class="xz2">
+            <li class="active">配件仓库</li>
+            <li>组件仓库</li>
+        </ul>
+        <div class="img_luxian" style="display:block;">
             <div class="left"> <img src="img/lxlx.png" alt=""></div>
             <div class="right">
                 <div class="one">
@@ -214,6 +225,64 @@
                         <li><a href="" style="color:#53a2e0;">取货详情 》</a></li>
                         <li> 取货数量：<span>100</span></li>
                         <li> 取货种类：<span>9</span></li>
+                        <li class="sao">
+                            <ul style="width:25px;">
+                                <li>领</li>
+                                <li>详</li>
+                                <li>情</li>
+                            </ul>
+                            <ul style="width:95px;height:95px;"><img src="img/sao.png" alt="" style="width:100%;height:100%;"></ul>
+                            <ul style="width:25px;">
+                                <li>扫</li>
+                                <li>一</li>
+                                <li>扫</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="img_luxian" style="display:none;">
+            <div class="left"> <img src="img/lxlx2.png" alt=""></div>
+            <div class="right">
+                <div class="one">
+                    <ul>
+                        <li><img src="img/qh1.png" alt="" style="width:50px;"></li>
+                        <li>货物货架</li>
+                    </ul>
+                    <ul>
+                        <li><img src="img/qh2.png" alt=""></li>
+                        <li>当前位置</li>
+                    </ul>
+                    <ul>
+                        <li><img src="img/qh3.png" alt=""></li>
+                        <li>货物位置</li>
+                    </ul>
+                    <ul>
+                        <li><img src="img/qu4.png" alt=""></li>
+                        <li>方向</li>
+                    </ul>
+                </div>
+                <div class="two">
+                    <ul>
+                        <li>取货员</li>
+                        <li class="img"> <img src="img/people.png" alt=""> </li>
+                        <li><a href="" style="color:#53a2e0;">取货详情 》</a></li>
+                        <li> 取货数量：<span>100</span></li>
+                        <li> 取货种类：<span>9</span></li>
+                        <li class="sao">
+                            <ul style="width:25px;">
+                                <li>领</li>
+                                <li>详</li>
+                                <li>情</li>
+                            </ul>
+                            <ul style="width:95px;height:95px;"><img src="img/sao.png" alt="" style="width:100%;height:100%;"></ul>
+                            <ul style="width:25px;">
+                                <li>扫</li>
+                                <li>一</li>
+                                <li>扫</li>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -228,8 +297,76 @@
                 <li class="BTN_NO">退出</li>
             </ul>
         </div>
+        <ul class="xz">
+            <li class="active">整件</li>
+            <li>配件</li>
+        </ul>
         <div class="table_xianqing">
-            <li class="table">
+            <li class="table qhxq">
+                <table class="table table-hover table-bordered">
+                    <thead>
+                    <tr style="background:#f9f9f9">
+                        <th>商品名称</th>
+                        <th>单位</th>
+                        <th>所属订单</th>
+                        <th>规格</th>
+                        <th>取货数量</th>
+                        <th>所在位置</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>80MM QUADPAVE</td>
+                        <td>pc</td>
+                        <td>10236577416</td>
+                        <td>1*1*1</td>
+                        <td>300</td>
+                        <td>A-01-02</td>
+                    </tr>
+                    <tr>
+                        <td>80MM QUADPAVE</td>
+                        <td>pc</td>
+                        <td>10236577416</td>
+                        <td>1*1*1</td>
+                        <td>300</td>
+                        <td>A-01-02</td>
+                    </tr>
+                    <tr>
+                        <td>80MM QUADPAVE</td>
+                        <td>pc</td>
+                        <td>10236577416</td>
+                        <td>1*1*1</td>
+                        <td>300</td>
+                        <td>A-01-02</td>
+                    </tr>
+                    <tr>
+                        <td>80MM QUADPAVE</td>
+                        <td>pc</td>
+                        <td>10236577416</td>
+                        <td>1*1*1</td>
+                        <td>300</td>
+                        <td>A-01-02</td>
+                    </tr>
+                    <tr>
+                        <td>80MM QUADPAVE</td>
+                        <td>pc</td>
+                        <td>10236577416</td>
+                        <td>1*1*1</td>
+                        <td>300</td>
+                        <td>A-01-02</td>
+                    </tr>
+                    <tr>
+                        <td>80MM QUADPAVE</td>
+                        <td>pc</td>
+                        <td>10236577416</td>
+                        <td>1*1*1</td>
+                        <td>300</td>
+                        <td>A-01-02</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </li>
+            <li class="table qhxq">
                 <table class="table table-hover table-bordered">
                     <thead>
                     <tr style="background:#f9f9f9">
@@ -345,6 +482,7 @@
                             <th>单位</th>
                             <th>所属订单</th>
                             <th>规格</th>
+                            <th>组件</th>
                             <th>取货数量</th>
                             <th>所在位置</th>
                         </tr>
@@ -357,13 +495,6 @@
                             <td><input type="text"></td>
                             <td><input type="text"></td>
                             <td><input type="text"></td>
-                        </tr>
-                        <tr>
-                            <td><input type="text"></td>
-                            <td><input type="text"></td>
-                            <td><input type="text"></td>
-                            <td><input type="text"></td>
-                            <td><input type="text"></td>
                             <td><input type="text"></td>
                         </tr>
                         <tr>
@@ -373,8 +504,19 @@
                             <td><input type="text"></td>
                             <td><input type="text"></td>
                             <td><input type="text"></td>
+                            <td><input type="text"></td>
                         </tr>
                         <tr>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text"></td>
                             <td><input type="text"></td>
                             <td><input type="text"></td>
                             <td><input type="text"></td>
@@ -388,8 +530,6 @@
             </div>
         </div>
     </div>
-
-
 </body>
 <script>
     // page
@@ -420,5 +560,17 @@
             $(".zhezhao").css("display","none");
             $(".HQ_contain").css("display","none");
         });
+    //取货详情:
+    $(".HQ_contain .xz li").click(function(){
+        var index=$(this).index(".HQ_contain .xz li");
+        $(".HQ_contain .xz li").removeClass("active").eq(index).addClass("active");
+        $(".table_xianqing .qhxq").css("display","none").eq(index).css("display","block");
+    });
+    //取货路线:
+    $(".HQ_contain .xz2 li").click(function(){
+        var index=$(this).index(".HQ_contain .xz2 li");
+        $(".HQ_contain .xz2 li").removeClass("active").eq(index).addClass("active");
+        $(".img_luxian").css("display","none").eq(index).css("display","block");
+    });
 </script>
 </html>
