@@ -14,6 +14,8 @@
 <style>
     body{padding:0 8px;box-sizing:border-box;overflow-y:scroll;color:#494949;}
     a{color:#494949;}
+    .contain_In .top .onebox ul{cursor:pointer;}
+    .Active{background:#eee;cursor:pointer;}
 </style>
 <body>
 <!--start header-->
@@ -51,7 +53,7 @@
     <div class="left">
         <div class="top">
             <div class="onebox">
-                <ul>
+                <ul class="Active">
                     <li>所有商品</li>
                     <li style="color:#c2a4f8;">620</li>
                 </ul>
@@ -90,15 +92,24 @@
 <!--end contain-->
 </body>
 <script>
-    // chart5:
-    zhuX=['项目A','项目A','项目A','项目A','项目A','项目A','项目A'];
-    zhuY1=[80,80,80,80,80,80,80];
-    zhuY2=[20,3,48,4,10,30,50];
-    zhuY3=[10,20,10,20,10,20,10];
-    createcharts.chart5(zhuX,zhuY1,zhuY2,zhuY3);
-    // chart2:
-    Xdata2=['商品A','商品A','商品A','商品A','商品A','商品A','所有商品'];
-    Ydata2=[20,30,30,50,20,80,100];
-    createcharts.chart2("商品占比率",Xdata2,Ydata2);
+    $(".contain_In .top .onebox ul").click(function(){
+        var index=$(this).index(".contain_In .top .onebox ul");
+        $(".contain_In .top .onebox ul").removeClass("Active").eq(index).addClass("Active");
+        chart();
+    });
+    chart();
+    function chart(){
+        // chart5:
+        zhuX=['项目A','项目A','项目A','项目A','项目A','项目A','项目A'];
+        zhuY1=[80,80,80,80,80,80,80];
+        zhuY2=[20,3,48,4,10,30,50];
+        zhuY3=[10,20,10,20,10,20,10];
+        createcharts.chart5(zhuX,zhuY1,zhuY2,zhuY3);
+        // chart2:
+        Xdata2=['商品A','商品A','商品A','商品A','商品A','商品A','所有商品'];
+        Ydata2=[20,30,30,50,20,80,100];
+        createcharts.chart2("商品占比率",Xdata2,Ydata2);
+    }
+
 </script>
 </html>
