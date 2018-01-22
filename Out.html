@@ -14,7 +14,7 @@
 <style>
     body{padding:0 8px;box-sizing:border-box;overflow-y:scroll;color:#494949;}
     a{color:#494949;}
-    .contain_In .top .onebox ul{cursor:pointer;}
+    .contain_In .top .onebox .aa{cursor:pointer;}
     .Active{background:#eee;cursor:pointer;}
 </style>
 <body>
@@ -53,15 +53,15 @@
     <div class="left">
         <div class="top">
             <div class="onebox">
-                <ul class="Active">
+                <ul class="aa Active">
                     <li>所有商品</li>
                     <li style="color:#c2a4f8;">620</li>
                 </ul>
-                <ul>
+                <ul class="aa">
                     <li>配件商品</li>
                     <li style="color:#8bb4f9">420</li>
                 </ul>
-                <ul>
+                <ul class="aa">
                     <li>整件商品</li>
                     <li style="color:#66d0f8;">200</li>
                 </ul>
@@ -92,9 +92,9 @@
 <!--end contain-->
 </body>
 <script>
-    $(".contain_In .top .onebox ul").click(function(){
-        var index=$(this).index(".contain_In .top .onebox ul");
-        $(".contain_In .top .onebox ul").removeClass("Active").eq(index).addClass("Active");
+    $(".contain_In .top .onebox .aa").click(function(){
+        var index=$(this).index(".contain_In .top .onebox .aa");
+        $(".contain_In .top .onebox .aa").removeClass("Active").eq(index).addClass("Active");
         chart();
     });
     chart();
