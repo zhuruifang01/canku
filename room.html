@@ -11,6 +11,7 @@
 <style>
     body{padding:0 8px;box-sizing:border-box;overflow-y:scroll;color:#7d7d7d;}
     a{color:#7d7d7d;;text-decoration:none;}
+
 </style>
 <body>
 <!--start header-->
@@ -111,77 +112,7 @@
                     <th>所在位置</th>
                 </tr>
                 </thead>
-                <tbody>
-                <tr>
-                    <td>2新加坡</td>
-                    <td>80MM QUADPAVE</td>
-                    <td class="img"><img src="img/people.png" alt=""></td>
-                    <td>PC</td>
-                    <td>10236577416</td>
-                    <td>1*1*1</td>
-                    <td>否</td>
-                    <td>500</td>
-                    <td class="input">
-                        <input type="text" placeholder="50">
-                    </td>
-                    <td>A-01-02</td>
-                </tr>
-                <tr>
-                    <td>2新加坡</td>
-                    <td>80MM QUADPAVE</td>
-                    <td class="img"><img src="img/people.png" alt=""></td>
-                    <td>PC</td>
-                    <td>10236577416</td>
-                    <td>1*1*1</td>
-                    <td>否</td>
-                    <td>500</td>
-                    <td class="input">
-                        <input type="text" placeholder="50">
-                    </td>
-                    <td>A-01-02</td>
-                </tr>
-                <tr>
-                    <td>2新加坡</td>
-                    <td>80MM QUADPAVE</td>
-                    <td class="img"><img src="img/people.png" alt=""></td>
-                    <td>PC</td>
-                    <td>10236577416</td>
-                    <td>1*1*1</td>
-                    <td>否</td>
-                    <td>500</td>
-                    <td class="input">
-                        <input type="text" placeholder="50">
-                    </td>
-                    <td>A-01-02</td>
-                </tr>
-                <tr>
-                    <td>2新加坡</td>
-                    <td>80MM QUADPAVE</td>
-                    <td class="img"><img src="img/people.png" alt=""></td>
-                    <td>PC</td>
-                    <td>10236577416</td>
-                    <td>1*1*1</td>
-                    <td>否</td>
-                    <td>500</td>
-                    <td class="input">
-                        <input type="text" placeholder="50">
-                    </td>
-                    <td>A-01-02</td>
-                </tr>
-                <tr>
-                    <td>2新加坡</td>
-                    <td>80MM QUADPAVE</td>
-                    <td class="img"><img src="img/people.png" alt=""></td>
-                    <td>PC</td>
-                    <td>10236577416</td>
-                    <td>1*1*1</td>
-                    <td>否</td>
-                    <td>500</td>
-                    <td class="input">
-                        <input type="text" placeholder="50">
-                    </td>
-                    <td>A-01-02</td>
-                </tr>
+                <tbody class="tbody">
                 </tbody>
             </table>
         </li>
@@ -193,9 +124,195 @@
 <script>
     // page
     $.jqPaginator('#pagination1', {
-        totalPages: 100,
-        visiblePages: 10,
+        totalPages:3,
+        visiblePages:3,
         currentPage: 1,
+        onPageChange: function (num) {
+            onePage1(num);
+        }
     });
+    //加载静态数据：
+    onePage1(1);
+    function onePage1(num) {
+        $(".tbody").html(" ");
+        if(num==1){
+            $(".tbody").append(
+                "<tr>" +
+                "<td>新加坡配件仓库</td>" +
+                "<td>FMWF</td>" +
+                "<td class='img'><img src='img/room/1.jpg' alt=''></td> " +
+                "<td>件</td>" +
+                "<td></td>" +
+                "<td>42*28*14</td>" +
+                "<td>否</td>" +
+                "<td>100</td>" +
+                "<td class='input'>" +
+                "<input type='text' placeholder='50'>" +
+                "</td>" +
+                "<td>A-01-07</td>" +
+                "</tr>" +
+                "<tr>" +
+                "<td>新加坡配件仓库</td>" +
+                "<td>FSEB</td>" +
+                "<td class='img'><img src='img/room/2.jpg' alt=''></td>" +
+                "<td>件</td>" +
+                "<td></td>" +
+                "<td>37*19*12.5</td>" +
+                "<td>否</td>" +
+                "<td>100</td>" +
+                "<td class='input'>" +
+                "<input type='text' placeholder='50'>" +
+                "</td>" +
+                "<td>A-01-08</td>" +
+                "</tr>" +
+                "<tr>" +
+                "<td>新加坡配件仓库</td>" +
+                "<td>FASH EAC CABLE</td>" +
+                "<td class='img'><img src='img/room/3.jpg' alt=''></td>" +
+                "<td>件</td>" +
+                "<td></td>" +
+                "<td>33*30*4</td>" +
+                "<td>否</td>" +
+                "<td>100</td>" +
+                "<td class='input'>" +
+                "<input type='text' placeholder='50'>" +
+                "</td>" +
+                "<td>A-01-09</td>" +
+                "</tr>" +
+                "<tr>" +
+                "<td>新加坡配件仓库</td>" +
+                "<td>FMCA</td>" +
+                "<td class='img'><img src='img/room/4.jpg' alt=''></td>" +
+                "<td>件</td>" +
+                "<td></td>" +
+                "<td>49.5*18*13.7</td>" +
+                "<td>否</td>" +
+                "<td>100</td>" +
+                "<td class='input'>" +
+                "<input type='text' placeholder='50'>" +
+                "</td>" +
+                "<td>A-01-10</td>" +
+                "</tr>" +
+                "<tr>" +
+                "<td>新加坡配件仓库</td>" +
+                "<td>FPKC</td>" +
+                "<td class='img'><img src='img/room/5.jpg' alt=''></td>" +
+                "<td>件</td>" +
+                "<td></td>" +
+                "<td>48*14.5*8.5</td>" +
+                "<td>否</td>" +
+                "<td>100</td>" +
+                "<td class='input'>" +
+                "<input type='text' placeholder='50'>" +
+                "</td>" +
+                "<td>A-01-11</td>" +
+                "</tr>"
+            )
+        }else if(num==2){
+            $(".tbody").append("" +
+                "<tr>" +
+                "<td>新加坡配件仓库</td>" +
+                "<td>FMWF</td>" +
+                "<td class='img'><img src='img/room/6.jpg' alt=''></td>" +
+                "<td>件</td>" +
+                "<td></td>" +
+                "<td>42*28*14</td>" +
+                "<td>否</td>" +
+                "<td>100</td>" +
+                "<td class='input'>" +
+                "<input type='text' placeholder='50'>" +
+                "</td>" +
+                "<td>A-01-07</td>" +
+                "</tr>" +
+                "<tr>" +
+                "<td>新加坡配件仓库</td>" +
+                "<td>FSEB</td>" +
+                "<td class='img'><img src='img/room/7.jpg' alt=''></td>" +
+                "<td>件</td>" +
+                "<td></td>" +
+                "<td>37*19*12.5</td>" +
+                "<td>否</td>" +
+                "<td>100</td>" +
+                "<td class='input'>" +
+                "<input type='text' placeholder='50'>" +
+                "</td>" +
+                "<td>A-01-08</td>" +
+                "</tr>" +
+                "<tr>" +
+                "<td>新加坡配件仓库</td>" +
+                "<td>FASH EAC CABLE</td>" +
+                "<td class='img'><img src='img/room/8.jpg' alt=''></td>" +
+                "<td>件</td>" +
+                "<td></td>" +
+                "<td>33*30*4</td>" +
+                "<td>否</td>" +
+                "<td>100</td>" +
+                "<td class='input'>" +
+                "<input type='text' placeholder='50'>" +
+                "</td>" +
+                "<td>A-01-09</td>" +
+                "</tr>" +
+                "<tr>" +
+                "<td>新加坡配件仓库</td>" +
+                "<td>FMCA</td>" +
+                "<td class='img'><img src='img/room/9.jpg' alt=''></td>" +
+                "<td>件</td>" +
+                "<td></td>" +
+                "<td>49.5*18*13.7</td>" +
+                "<td>否</td>" +
+                "<td>100</td>" +
+                "<td class='input'>" +
+                "<input type='text' placeholder='50'>" +
+                "</td>" +
+                "<td>A-01-10</td>" +
+                "</tr>" +
+                "<tr>" +
+                "<td>新加坡配件仓库</td>" +
+                "<td>FPKC</td>" +
+                "<td class='img'><img src='img/room/10.jpg' alt=''></td>" +
+                "<td>件</td>" +
+                "<td></td>" +
+                "<td>48*14.5*8.5</td>" +
+                "<td>否</td>" +
+                "<td>100</td>" +
+                "<td class='input'>" +
+                "<input type='text' placeholder='50'>" +
+                "</td>" +
+                "<td>A-01-11</td>" +
+                "</tr>"
+            );
+        }else if(num==3){
+            $(".tbody").append("" +
+                "<tr>" +
+                "<td>新加坡配件仓库</td>" +
+                "<td>(GREY)80MM QUADPAVE</td>" +
+                "<td class='img'><img src='img/room/11.jpg' alt=''></td>" +
+                "<td>Pc</td>" +
+                "<td></td>" +
+                "<td></td>" +
+                "<td></td>" +
+                "<td>100</td>" +
+                "<td class='input'>" +
+                "<input type='text' placeholder='50'>" +
+                "</td>" +
+                "<td></td>" +
+                "</tr>" +
+                "<tr>" +
+                "<td>新加坡配件仓库</td>" +
+                "<td>1/2 CABLE Clamp c/w Threaded Rod</td><td class='img'><img src='img/room/12.jpg' alt=''>" +
+                "</td>" +
+                "<td>set</td>" +
+                "<td></td>" +
+                "<td></td>" +
+                "<td></td>" +
+                "<td>100</td>" +
+                "<td class='input'>" +
+                "<input type='text' placeholder='50'>" +
+                "</td>" +
+                "<td></td>" +
+                "</tr>"
+            );
+        }
+    }
 </script>
 </html>
