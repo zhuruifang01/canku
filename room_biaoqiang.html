@@ -11,6 +11,9 @@
 <style>
     body{padding:0 8px;box-sizing:border-box;overflow-y:scroll;color:#7d7d7d;}
     a{color:#7d7d7d;;text-decoration:none;}
+    input{background:none;}
+    .contain_room .table td{height:48px;line-height:48px;}
+    .contain_room .table .tbody img{height:48px;width:48px;}
 </style>
 <body>
 <!--start header-->
@@ -112,57 +115,7 @@
                     <th>组装产品</th>
                 </tr>
                 </thead>
-                <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>10236577416</td>
-                    <td class="img"><img src="img/people.png" alt=""></td>
-                    <td>123456789</td>
-                    <td>(GEREY)80MM QUADPAVE</td>
-                    <td>PC</td>
-                    <td>1*1*1</td>
-                    <td>是</td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>10236577416</td>
-                    <td class="img"><img src="img/people.png" alt=""></td>
-                    <td>123456789</td>
-                    <td>(GEREY)80MM QUADPAVE</td>
-                    <td>PC</td>
-                    <td>1*1*1</td>
-                    <td>是</td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>10236577416</td>
-                    <td class="img"><img src="img/people.png" alt=""></td>
-                    <td>123456789</td>
-                    <td>(GEREY)80MM QUADPAVE</td>
-                    <td>PC</td>
-                    <td>1*1*1</td>
-                    <td>是</td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>10236577416</td>
-                    <td class="img"><img src="img/people.png" alt=""></td>
-                    <td>123456789</td>
-                    <td>(GEREY)80MM QUADPAVE</td>
-                    <td>PC</td>
-                    <td>1*1*1</td>
-                    <td>是</td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>10236577416</td>
-                    <td class="img"><img src="img/people.png" alt=""></td>
-                    <td>123456789</td>
-                    <td>(GEREY)80MM QUADPAVE</td>
-                    <td>PC</td>
-                    <td>1*1*1</td>
-                    <td>是</td>
-                </tr>
+                <tbody class="tbody">
                 </tbody>
             </table>
         </li>
@@ -174,9 +127,150 @@
 <script>
     // page
     $.jqPaginator('#pagination1', {
-        totalPages: 100,
-        visiblePages: 10,
+        totalPages: 3,
+        visiblePages: 3,
         currentPage: 1,
+        onPageChange: function (num) {
+            onePage1(num);
+        }
     });
+    //加载静态数据：
+    onePage1(1);
+    function onePage1(num) {
+        $(".tbody").html(" ");
+        if(num==1){
+            $(".tbody").append(
+                "<tr>" +
+                    "<td>1</td>" +
+                    "<td>E20180206A1A0001</td> " +
+                    "<td class='img'> <img src='img/room/1.jpg' alt=''> </td>" +
+                    "<td>000000001</td>" +
+                    "<td>FSES</td>" +
+                    "<td>件</td>" +
+                    "<td>29.5*19*8</td>" +
+                    "<td>否</td>" +
+                "</tr>"+
+                "<tr>" +
+                    "<td>2</td>" +
+                    "<td>E20180206A1A0002</td> " +
+                    "<td class='img'> <img src='img/room/2.jpg' alt=''> </td>" +
+                    "<td>000000002</td>" +
+                    "<td>FTCR</td>" +
+                    "<td>件</td>" +
+                    "<td>32*31*3.5</td>" +
+                    "<td>否</td>" +
+                "</tr>"+
+                "<tr>" +
+                    "<td>3</td>" +
+                    "<td>E20180206A1A0003</td> " +
+                    "<td class='img'><img src='img/room/3.jpg' alt=''> </td>" +
+                    "<td>000000003</td>" +
+                    "<td>EMHA</td>" +
+                    "<td>件</td>" +
+                    "<td>50*49*15.7</td>" +
+                    "<td>否</td>" +
+                "</tr>"+
+                "<tr>" +
+                    "<td>4</td>" +
+                    "<td>E20180206A1A0004</td> " +
+                    "<td class='img'><img src='img/room/4.jpg' alt=''> </td>" +
+                    "<td>000000004</td>" +
+                    "<td>FPKA</td>" +
+                    "<td>件</td>" +
+                    "<td>30.7*26*4.7</td>" +
+                    "<td>否</td>" +
+                "</tr>"+
+                "<tr>" +
+                    "<td>5</td>" +
+                    "<td>E20180206A1A0005</td> " +
+                    "<td class='img'> <img src='img/room/5.jpg' alt=''> </td>" +
+                    "<td>000000005</td>" +
+                    "<td>FUFAY</td>" +
+                    "<td>件</td>" +
+                    "<td>40.5*34.2*6</td>" +
+                    "<td>否</td>" +
+                "</tr>"
+            )
+        }
+        else if(num==2){
+            $(".tbody").append("<tr>" +
+                "<tr>" +
+                    "<td>6</td>" +
+                    "<td>E20180206A1A0006</td> " +
+                    "<td class='img'> <img src='img/room/6.jpg' alt=''> </td>" +
+                    "<td>000000006</td>" +
+                    "<td>FMWF</td>" +
+                    "<td>件</td>" +
+                    "<td>42*28*14</td>" +
+                    "<td>否</td>" +
+                "</tr>"+
+                "<tr>" +
+                    "<td>7</td>" +
+                    "<td>E20180206A1A0007</td> " +
+                    "<td class='img'> <img src='img/room/7.jpg' alt=''> </td>" +
+                    "<td>000000007</td>" +
+                    "<td>FSEB</td>" +
+                    "<td>件</td>" +
+                    "<td>37*19*12.5</td>" +
+                    "<td>否</td>" +
+                "</tr>"+
+                "<tr>" +
+                    "<td>8</td>" +
+                    "<td>E20180206A1A0008</td> " +
+                    "<td class='img'> <img src='img/room/8.jpg' alt=''> </td>" +
+                    "<td>000000008</td>" +
+                    "<td>FSAH EAC CABLE</td>" +
+                    "<td>件</td>" +
+                    "<td>33*30*4</td>" +
+                    "<td>否</td>" +
+                "</tr>"+
+                "<tr>" +
+                    "<td>9</td>" +
+                    "<td>E20180206A1A0009</td> " +
+                    "<td class='img'> <img src='img/room/9.jpg' alt=''> </td>" +
+                    "<td>000000008</td>" +
+                    "<td>FMCA</td>" +
+                    "<td>件</td>" +
+                    "<td>49.5*18*13.7</td>" +
+                    "<td>否</td>" +
+                "</tr>"+
+                "<tr>" +
+                    "<td>10</td>" +
+                    "<td>E20180206A1A0010</td> " +
+                    "<td class='img'> <img src='img/room/10.jpg' alt=''> </td>" +
+                    "<td>000000010</td>" +
+                    "<td>FPKC</td>" +
+                    "<td>件</td>" +
+                    "<td>48*14.5*8.5</td>" +
+                    "<td>否</td>" +
+                "</tr>"
+
+            );
+        }else if(num==3){
+            $(".tbody").append("<tr>" +
+                "<tr>" +
+                    "<td>11</td>" +
+                    "<td>E20180206A1A0011</td> " +
+                    "<td class='img'> <img src='img/room/11.jpg' alt=''> </td>" +
+                    "<td>000000011</td>" +
+                    "<td>(GREY) 80MM QUADPAVE</td>" +
+                    "<td>Pc</td>" +
+                    "<td>48*14.5*8.5</td>" +
+                    "<td>否</td>" +
+                "</tr>"+
+
+                "<tr>" +
+                    "<td>12</td>" +
+                    "<td>10236577416</td> " +
+                    "<td class='img'> <img src='img/room/12.jpg' alt=''> </td>" +
+                    "<td>123456789</td>" +
+                    "<td>(GEREY)80MM QUADPAVE</td>" +
+                    "<td>PC</td>" +
+                    "<td>1*1*1</td>" +
+                    "<td>是</td>" +
+                "</tr>"
+            );
+        }
+    }
 </script>
 </html>

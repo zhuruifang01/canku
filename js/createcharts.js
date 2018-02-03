@@ -706,7 +706,8 @@
                           textStyle: {
                               color: '#7d7d7d'   //x轴字体颜色
                           },
-                          // interval:0
+                          interval:0,
+                          rotate:-5
                       },
                       axisLine:{
                           lineStyle:{

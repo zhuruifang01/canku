@@ -163,10 +163,11 @@ input{width:100%;height:100%;padding:0;margin:0;border:0;}
 .contain_In_xianqing2 .top .onebox ul{width:33.3%;}
 .contain_In_xianqing2 .left .top .title{width:100%;height:40px;line-height:40px;color:#53a2e0;font-size:18px;}
 .contain_In_xianqing2 .left .top .con{width:100%;height:160px;}
-.contain_In_xianqing2 .left .top .con ul{width:33%;height:100%;float:left;}
+.contain_In_xianqing2 .left .top .con ul{width:43%;height:100%;float:left;}
+.contain_In_xianqing2 .left .top .con ul:first-child{width:35%;}
 .contain_In_xianqing2 .left .top .con ul li{width:100%;height:46px;line-height:46px;}
-.contain_In_xianqing2 .left .top .con .teshu{float:right;}
-.contain_In_xianqing2 .left .top .con .teshu li{width:100%;height:31px;line-height:31px;}
+.contain_In_xianqing2 .left .top .con .teshu{width:22%;float:right;}
+.contain_In_xianqing2 .left .top .con .teshu li{width:100%;height:40px;line-height:38px;}
 
 .banner{position:absolute;top:0;left:0;}
 

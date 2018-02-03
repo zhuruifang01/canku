@@ -41,7 +41,7 @@
             </ul>
             <ul>
                 <li>项目数</li>
-                <li style="color:#e876a5;">4</li>
+                <li style="color:#e876a5;">1</li>
             </ul>
         </div>
         <div class="con2">
@@ -51,16 +51,16 @@
             </ul>
             <div class="manage">
                 <ul>
-                    <li><img src="img/people.png" alt=""></li>
-                    <li>张得勇</li>
+                    <li><img src="img/room/hj.jpg" alt=""></li>
+                    <li>黄佳</li>
                 </ul>
                 <ul>
-                    <li><img src="img/people.png" alt=""></li>
-                    <li>张得勇</li>
+                    <li><img src="img/room/hw.jpg" alt=""></li>
+                    <li>黄伟</li>
                 </ul>
                 <ul>
-                    <li><img src="img/people.png" alt=""></li>
-                    <li>张得勇</li>
+                    <li><img src="img/room/cf.jpg" alt=""></li>
+                    <li>陈峰</li>
                 </ul>
             </div>
         </div>
@@ -84,18 +84,18 @@
                     <th>操作</th>
                 </tr>
                 </thead>
-                <tbody>
+                <tbody class="tbody">
                 <tr>
                     <td>
                         <div class="checkbox">
                             <input type="checkbox" name="checkbox"/>
                         </div>
                     </td>
-                    <td>POSGA15094</td>
-                    <td>80MM QUADPAVE</td>
-                    <td></td>
-                    <td>300</td>
-                    <td>POSGA15094</td>
+                    <td>FSES</td>
+                    <td>件</td>
+                    <td>29.5*19*8</td>
+                    <td>100</td>
+                    <td>BC Koh Consulting Engineers</td>
                     <td><a href="">删除</a></td>
                 </tr>
                 <tr>
@@ -218,7 +218,7 @@
                 </tbody>
             </table>
         </li>
-        <ul class="pagination" id="pagination1"></ul>
+        <ul class="pagination" id="pagination1" style="position:absolute;left:28%;"></ul>
     </div>
 </div>
 <!--end contain-->
@@ -226,9 +226,155 @@
 <script>
     // page
     $.jqPaginator('#pagination1', {
-        totalPages: 100,
-        visiblePages: 10,
+        totalPages: 2,
+        visiblePages: 2,
         currentPage: 1,
+        onPageChange: function (num) {
+            onePage1(num);
+        }
     });
+    //采购历史 静态数据加载：
+    onePage1(1);
+    function onePage1(num) {
+        $("table .tbody").html(" ");
+        if(num==1){
+            $("table .tbody").append(
+                " <tr>" +
+                        "<td>" +
+                        "<div class='checkbox'>" +
+                            "<input type='checkbox' name='checkbox'/>" +
+                        "</div>" +
+                        "</td>" +
+                        "<td>FSES</td>" +
+                        "<td>件</td>" +
+                        "<td>29.5*19*8</td>" +
+                        "<td>100</td>" +
+                        "<td>BC Koh Consulting Engineers</td>" +
+                        "<td><a href=''>删除</a></td>" +
+                "</tr>"+
+                "<tr>" +
+                        "<td>" +
+                        "<div class='checkbox'>" +
+                        "<input type='checkbox' name='checkbox'/>" +
+                        "</div>" +
+                        "</td>" +
+                        "<td>FTCR</td>" +
+                        "<td>件</td>" +
+                        "<td>32*31*3.5</td>" +
+                        "<td>100</td>" +
+                        "<td>BC Koh Consulting Engineers</td>" +
+                        "<td><a href=''>删除</a></td>" +
+                "</tr>"+
+                "<tr>" +
+                        "<td>" +
+                        "<div class='checkbox'>" +
+                        "<input type='checkbox' name='checkbox'/>" +
+                        "</div>" +
+                        "</td>" +
+                        "<td>EMHA</td>" +
+                        "<td>件</td>" +
+                        "<td>50*49*15.7</td>" +
+                        "<td>100</td>" +
+                        "<td>BC Koh Consulting Engineers</td>" +
+                        "<td><a href=''>删除</a></td>" +
+                "</tr>"+
+                "<tr>" +
+                        "<td>" +
+                        "<div class='checkbox'>" +
+                        "<input type='checkbox' name='checkbox'/>" +
+                        "</div>" +
+                        "</td>" +
+                        "<td>FPKA</td>" +
+                        "<td>件</td>" +
+                        "<td>30.7*26*4.7</td>" +
+                        "<td>100</td>" +
+                        "<td>BC Koh Consulting Engineers</td>" +
+                        "<td><a href=''>删除</a></td>" +
+                "</tr>"+
+                        " <tr>" +
+                        "<td>" +
+                        "<div class='checkbox'>" +
+                        "<input type='checkbox' name='checkbox'/>" +
+                        "</div>" +
+                        "</td>" +
+                        "<td>FUFAY</td>" +
+                        "<td>件</td>" +
+                        "<td>40.5*34.2*6</td>" +
+                        "<td>100</td>" +
+                        "<td>BC Koh Consulting Engineers</td>" +
+                        "<td><a href=''>删除</a></td>" +
+                "</tr>"
+            )
+        }
+        else if(num==2){
+            $(".tbody").append(
+                "<tr>" +
+                        "<td>" +
+                        "<div class='checkbox'>" +
+                        "<input type='checkbox' name='checkbox'/>" +
+                        "</div>" +
+                        "</td>" +
+                        "<td>FMWF</td>" +
+                        "<td>件</td>" +
+                        "<td>42*28*14</td>" +
+                        "<td>100</td>" +
+                        "<td>BC Koh Consulting Engineers</td>" +
+                        "<td><a href=''>删除</a></td>" +
+                "</tr>"+
+                "<tr>" +
+                        "<td>" +
+                        "<div class='checkbox'>" +
+                        "<input type='checkbox' name='checkbox'/>" +
+                        "</div>" +
+                        "</td>" +
+                        "<td>FSEB</td>" +
+                        "<td>件</td>" +
+                        "<td>37*19*12.5</td>" +
+                        "<td>100</td>" +
+                        "<td>BC Koh Consulting Engineers</td>" +
+                        "<td><a href=''>删除</a></td>" +
+                "</tr>"+
+                "<tr>" +
+                        "<td>" +
+                        "<div class='checkbox'>" +
+                        "<input type='checkbox' name='checkbox'/>" +
+                        "</div>" +
+                        "</td>" +
+                        "<td>FSAH EAC CABLE</td>" +
+                        "<td>件</td>" +
+                        "<td>33*30*4</td>" +
+                        "<td>100</td>" +
+                        "<td>BC Koh Consulting Engineers</td>" +
+                        "<td><a href=''>删除</a></td>" +
+                "</tr>"+
+                "<tr>" +
+                        "<td>" +
+                        "<div class='checkbox'>" +
+                        "<input type='checkbox' name='checkbox'/>" +
+                        "</div>" +
+                        "</td>" +
+                        "<td>FMCA</td>" +
+                        "<td>件</td>" +
+                        "<td>49.5*18*13.7</td>" +
+                        "<td>100</td>" +
+                        "<td>BC Koh Consulting Engineers</td>" +
+                        "<td><a href=''>删除</a></td>" +
+                "</tr>"+
+                " <tr>" +
+                        "<td>" +
+                        "<div class='checkbox'>" +
+                        "<input type='checkbox' name='checkbox'/>" +
+                        "</div>" +
+                        "</td>" +
+                        "<td>FPKC</td>" +
+                        "<td>件</td>" +
+                        "<td>48*14.5*8.5</td>" +
+                        "<td>100</td>" +
+                        "<td>BC Koh Consulting Engineers</td>" +
+                        "<td><a href=''>删除</a></td>" +
+                "</tr>"
+            );
+        }
+    }
 </script>
 </html>
